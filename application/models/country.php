@@ -7,7 +7,6 @@
 			return $this->db->query($query)->result_array();
 		}
 
-
 		public function get_country($string)
 		{
 			
