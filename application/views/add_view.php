@@ -2,7 +2,16 @@
 <head>
 	<title></title>
 </head>
+<script type="text/javascript">
+function yes()
+{
+	var w1 = window.opener;
+	w1.location.reload();
+	
+}
+</script>
 <body>
+	<a href="#" onclick='yes()'>dude</a>
 	<h2>Make a new country!</h2>
 	<?php 
 	if($this->session->flashdata('errors'))

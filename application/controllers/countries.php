@@ -41,6 +41,17 @@ class Countries extends CI_Controller {
 			redirect(base_url('/countries/add'));
 		}
 	}
+
+	public function ajax()
+	{
+		$this->load->view('ajax_view');
+	}
+
+	public function ajax_submit()
+	{
+		//this is where I would put the new joke into the database
+		echo json_encode($this->input->post('joke'));
+	}
 }
 
 /* End of file welcome.php */
